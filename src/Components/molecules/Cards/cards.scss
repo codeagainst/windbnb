@@ -1,0 +1,34 @@
+@import '../Cards/Card/card.scss';
+
+.contentContainer {
+  margin-bottom: 85px;
+}
+
+.containerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px 32px;
+}
+
+@media (max-width: 1024px) {
+  .cardGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 32px;
+  }
+}
+
+@media (max-width: 560px) {
+  .cardGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+}

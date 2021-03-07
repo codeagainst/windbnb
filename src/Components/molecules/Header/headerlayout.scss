@@ -1,0 +1,19 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 32px  60px;
+}
+
+.headerContainer-full{
+  .logo {
+    display: none;
+  }
+  .filterContainer {
+    width: 100%;
+  }
+  .btn {
+    text-align: left;
+  }
+}

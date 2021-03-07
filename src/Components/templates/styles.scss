@@ -1,0 +1,29 @@
+@import '../settings/colors.scss';
+@import '../settings/typo.scss';
+@import '../settings/layout.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+/*Atoms*/
+//Button
+
+@import '../atoms/button.scss';
+@import '../atoms/logo.scss';
+@import '../atoms/links.scss';
+@import '../atoms/badges.scss';
+@import '../atoms/textInput.scss';
+
+/*Components*/
+//Header
+@import '../molecules/Header/headerlayout.scss';
+
+//Filter
+@import '../molecules/Header/Filter/filter.scss';
+
+//Card
+@import '../molecules/Cards/cards.scss';
+
+//Footer
+@import '../molecules/Footer/footer.scss';

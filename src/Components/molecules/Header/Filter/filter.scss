@@ -1,0 +1,179 @@
+//Typography
+
+.filterTypo {
+  font-family: 'Mulish', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.3em;
+}
+
+.filterTitleTypo{
+  @extend .filterTypo;
+  color: $primary;
+  font-weight: 700;
+}
+
+.filterHintTypo{
+  @extend .filterTypo;
+  color: $grey-3;
+  font-weight: 400;
+}
+
+.filterTitle {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1.25em;
+  color: $primary;
+  margin-bottom: 16px;
+  display: none;
+}
+
+//Filter normal
+
+.filterContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 55px;
+  border-radius: 16px;
+  background-color: $white;
+  box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+}
+
+//Collapsed filter
+
+.filterCollapsed {
+  div {
+    width: 100%;
+    border-right: 1px solid $grey-0;
+  }
+  div:last-child {
+    width: auto;
+    border: none;
+  }
+}
+
+//Expanded filter
+
+.pageContainer--filter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(79,79,79, 0.4);
+  height: 100vh;
+  width: 100%;
+}
+
+.contentContainer--filter {
+  background-color: $white;
+  padding: 93px 0 70px;
+}
+
+.filterContent {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 128px;
+}
+
+.filterValue {
+  margin-top: 48px;
+}
+
+//Internal info
+
+.cityList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding-left: 53px;
+    margin-bottom: 34px;
+    cursor: pointer;
+    position:relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 23px;
+      height: 20px;
+      width: 14px;
+      background: url(../../../../Images/pin.svg);
+      background-size: contain;
+      padding-right: 8px;
+    }
+    &:hover {
+      color:$accent;
+    }
+  }
+}
+
+.guestContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+}
+
+.guestItem {
+  display: flex;
+  flex-direction: column;
+  &:first-child {
+    margin-bottom: 52px;
+  }
+  span {
+    margin-bottom: 4px;
+  }
+  div {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+  span {
+    margin: 0 15px;
+  }
+  }
+}
+
+// Media Queries
+
+@media (max-width: 560px) {
+  .filterContainer {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .contentContainer--filter {
+    height: 100vh;
+    padding-top: 18px;
+  }
+
+  .filterTitle {
+    display: block;
+  }
+
+  .filterContainer.filterContent {
+    margin-top: 0;
+    grid-template-columns: 1fr 1fr;
+
+    button {
+      position: absolute;
+      width: 128px;  
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%);          
+    }
+  }
+  .filterContent.filterValue {
+    grid-template-columns: 1fr;
+  }
+
+  .filterValue {
+    margin-top: 35px;
+  }
+ 
+}

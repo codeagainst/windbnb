@@ -1,0 +1,82 @@
+.btnTypoBasic {
+  font-family: 'Mulish', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.3em;
+  text-align: center;
+  color: $primary;
+}
+
+.btn {
+  @extend .btnTypoBasic;
+  width: 100%;
+  border-radius: 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0 16px;
+  height: 55px;
+  white-space: nowrap;
+
+&:focus{
+  outline: none;
+  border: 1px solid $accent;
+}
+&:hover:not(:focus) {
+  background-color: $grey-0;
+  }
+}
+
+.btnSolid {
+  background-color: $accent;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: $white;
+  font-weight: 700;
+  padding: 0 25px;
+
+  &:focus {
+    outline: none;
+    border: 1px solid $primary;
+  }
+
+  &:hover:not(:focus) {
+    border: none;
+    background-color: $accent-dark;
+  }
+}
+
+.btnPlaceholder {
+  color:$grey-1;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.btnIcon {
+  color: $accent;
+  &:hover {
+    color: $accent-dark;
+  }
+}
+
+.btnCount {
+  padding: 0;
+  height: 23px;
+  width: 23px;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid $grey-3;
+  color: $grey-3;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  color: $grey-3;
+  cursor: pointer;
+  &:hover {
+    color: $accent;
+  }
+}
