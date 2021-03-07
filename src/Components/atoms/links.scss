@@ -11,10 +11,12 @@ a {
   &:active {
     border: none;
   }
+
   &:focus {
     border: none;
     outline: 1px solid $accent;
   }
+
   &:hover:not(:focus) {
     color: $secondary;
     border-color: $secondary;

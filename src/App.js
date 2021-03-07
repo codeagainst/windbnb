@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import stays from './API/stays.json';
-import './Components/templates/styles.scss';
+import './Components/templates/styles.scss'
 import Header from './Components/molecules/Header/Header';
 import Cards from './Components/molecules/Cards/Cards';
 import Footer from './Components/molecules/Footer/Footer';
@@ -21,8 +21,8 @@ function App() {
 
   return (
     <div className="container">
-      <Header 
-      stays={stays} 
+      <Header
+        stays={stays} 
         filterState={filterState}
         setFilterState={setFilterState}
         fieldActive={fieldActive}
@@ -35,10 +35,10 @@ function App() {
         setKidsCount={setKidsCount}
         sumOfGuests={sumOfGuests}
         setCardsFilter={setCardsFilter}
-        />
-        <Cards
-          stays={stays} cardsFilter={cardsFilter} />
-        <Footer />
+      />
+      <Cards
+        stays={stays} cardsFilter={cardsFilter} />
+      <Footer />
     </div>
   );
 }

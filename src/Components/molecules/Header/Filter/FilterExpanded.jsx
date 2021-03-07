@@ -44,4 +44,4 @@ function FilterExpanded({
   );
 }
 
-export default FilterExpanded
+export default FilterExpanded;

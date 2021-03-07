@@ -1,16 +1,16 @@
 import React from 'react';
 
-function Guests({adultsGuests, setAdultsCount, kids, setKidsCount}) {
-  
+function Guests({adultGuests, setAdultsCount, kids, setKidsCount}) {
   const counterDecrementAdults = () => {
-    if(adultsGuests === 0) return
-    setAdultsCount(adultsGuests - 1);
+    if(adultGuests === 0) return
+    setAdultsCount(adultGuests - 1);
   }
   const counterIncrementAdults = () => {
-    setAdultsCount(adultsGuests + 1);
+    setAdultsCount(adultGuests + 1);
   }
+
   const counterDecrementKids = () => {
-    if(kids === 0) return 
+    if(kids === 0) return
     setKidsCount(kids - 1);
   }
   const counterIncrementKids = () => {
@@ -40,7 +40,6 @@ function Guests({adultsGuests, setAdultsCount, kids, setKidsCount}) {
         </div>    
       </div>
     </div>
-
 
   );
 }

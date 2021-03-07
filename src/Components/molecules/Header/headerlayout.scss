@@ -1,9 +1,9 @@
 .headerContainer {
-  display: flex;
+  display: flex;  
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 32px  60px;
+  margin: 32px 0 60px;  
 }
 
 .headerContainer-full{
@@ -13,6 +13,7 @@
   .filterContainer {
     width: 100%;
   }
+
   .btn {
     text-align: left;
   }

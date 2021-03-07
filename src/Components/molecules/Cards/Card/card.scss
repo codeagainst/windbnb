@@ -1,3 +1,9 @@
+.cardsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px 32px;
+}
+
 .cardContainer {
   display: flex;
   flex-direction: column;
@@ -12,8 +18,9 @@
 .cardImg {
   margin-bottom: 15px;
   img {
-    width: 100%;
-    border-radius: 24px;
+  width: 100%;
+  border-radius: 24px;
+
   }
 }
 
@@ -23,18 +30,17 @@
   align-items: center;
   margin-bottom: 12px;
 
+  .badge {
+    margin-right: 10px;
+  }
 
-.badge {
-  margin-right: 10px;
-}
+  .cardTags {
+    margin-right: 10px;
+  }
 
-.cardTags {
-  margin-right: 10px;
-}
-
-.cardRating {
-  margin-left: auto;
-}
+  .cardRating {
+    margin-left: auto
+  }
 }
 
 .cardTags {
@@ -55,4 +61,3 @@
     background: url(../../../../Images/star.svg) no-repeat center center;
   }
 }
-

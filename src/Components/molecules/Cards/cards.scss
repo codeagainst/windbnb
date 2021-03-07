@@ -1,34 +1,20 @@
-@import '../Cards/Card/card.scss';
+@import './Card/card.scss';
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px 32px;
+}
 
 .contentContainer {
   margin-bottom: 85px;
 }
 
-.containerHeader {
+.contentHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   margin-bottom: 32px;
 }
 
-.cardGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px 32px;
-}
-
-@media (max-width: 1024px) {
-  .cardGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px 32px;
-  }
-}
-
-@media (max-width: 560px) {
-  .cardGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 50px;
-  }
-}

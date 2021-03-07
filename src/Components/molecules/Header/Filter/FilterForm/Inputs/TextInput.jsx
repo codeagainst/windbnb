@@ -1,5 +1,5 @@
 import React from 'react';
-import { useField } from "formik";
+import { useField } from 'formik';
 
 const TextInput = ({ label, fieldActive, setFieldActive, ...props }) => {
   const classList = (fieldActive === props.name) ? "textInput textInput-active" : "textInput";

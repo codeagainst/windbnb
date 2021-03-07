@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../Cards/Card.jsx';
+import Card from './Card/Card';
 
 function Cards({stays, cardsFilter}) {
   const cardArray = stays

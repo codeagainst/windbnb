@@ -1,23 +1,20 @@
-//Typography
-
+//Typo
 .filterTypo {
   font-family: 'Mulish', sans-serif;
   font-size: 0.875rem;
   line-height: 1.3em;
 }
-
-.filterTitleTypo{
+.filterTitleTypo {
   @extend .filterTypo;
   color: $primary;
   font-weight: 700;
 }
 
-.filterHintTypo{
+.filterHintTypo {
   @extend .filterTypo;
   color: $grey-3;
   font-weight: 400;
 }
-
 .filterTitle {
   font-family: 'Mulish', sans-serif;
   font-weight: 700;
@@ -28,8 +25,7 @@
   display: none;
 }
 
-//Filter normal
-
+////////////////
 .filterContainer {
   display: flex;
   flex-direction: row;
@@ -37,11 +33,10 @@
   height: 55px;
   border-radius: 16px;
   background-color: $white;
-  box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
 }
 
 //Collapsed filter
-
 .filterCollapsed {
   div {
     width: 100%;
@@ -53,24 +48,23 @@
   }
 }
 
-//Expanded filter
-
-.pageContainer--filter {
+//Expand filter
+.pageContainer--filter { //for darkening the page
   position: fixed;
   top: 0;
   left: 0;
   z-index: 99;
-  background-color: rgba(79,79,79, 0.4);
+  background-color: rgba(79, 79, 79, 0.4);
   height: 100vh;
   width: 100%;
 }
 
-.contentContainer--filter {
-  background-color: $white;
+.contentContainer--filter { //container for all the content
+  background-color: white;
   padding: 93px 0 70px;
 }
 
-.filterContent {
+.filterContent { //Grid for both parts
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 128px;
@@ -80,18 +74,17 @@
   margin-top: 48px;
 }
 
-//Internal info
-
-.cityList {
+//Inner parts
+.cityList { //ul
   margin: 0;
   padding: 0;
   list-style: none;
 
   li {
     padding-left: 53px;
-    margin-bottom: 34px;
+    margin-bottom: 34px;    
     cursor: pointer;
-    position:relative;
+    position: relative;
     &:last-child {
       margin-bottom: 0;
     }
@@ -102,17 +95,17 @@
       left: 23px;
       height: 20px;
       width: 14px;
-      background: url(../../../../Images/pin.svg);
+      background: url(../../../../Images/pin.svg) no-repeat left center;
       background-size: contain;
       padding-right: 8px;
     }
     &:hover {
-      color:$accent;
+      color: $accent;
     }
   }
 }
 
-.guestContainer {
+.guestsContainer {
   display: flex;
   flex-direction: column;
   padding-left: 25px;
@@ -132,15 +125,13 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-
-  span {
-    margin: 0 15px;
-  }
+    span {
+      margin: 0 15px;
+    }
   }
 }
 
-// Media Queries
-
+///Media queries
 @media (max-width: 560px) {
   .filterContainer {
     margin-top: 40px;
@@ -175,5 +166,6 @@
   .filterValue {
     margin-top: 35px;
   }
- 
+
+//ending  
 }

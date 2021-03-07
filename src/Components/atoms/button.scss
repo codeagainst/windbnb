@@ -9,7 +9,7 @@
 .btn {
   @extend .btnTypoBasic;
   width: 100%;
-  border-radius: 16px;
+  border-radius: 16px;  
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -17,12 +17,12 @@
   height: 55px;
   white-space: nowrap;
 
-&:focus{
-  outline: none;
-  border: 1px solid $accent;
-}
-&:hover:not(:focus) {
-  background-color: $grey-0;
+  &:focus {
+    outline: none;
+    border: 1px solid $accent;
+  }
+  &:hover:not(:focus) {
+    background-color: $grey-0;
   }
 }
 
@@ -47,7 +47,7 @@
 }
 
 .btnPlaceholder {
-  color:$grey-1;
+  color: $grey-1;
   &:hover {
     color: $primary;
   }
